@@ -11,8 +11,8 @@ export const serviceDetails: ServiceDetail[] = [
   {
     slug: "gallbladder-liver-disease",
     title: "Gallbladder & Liver Disease",
-    heroImage: "https://scot-cranston2.360max.io/wp-content/uploads/2021/08/gallbladder.png",
-    imageAlt: "Illustration of gallbladder anatomy",
+    heroImage: "/images/gallbladder_anatomy.jpeg",
+    imageAlt: "Gallbladder anatomy illustration",
     summary:
       "Robotic and laparoscopic approaches for complex biliary disease, gallbladder attacks, and hepatobiliary tumors.",
     conditions: [
@@ -28,8 +28,8 @@ export const serviceDetails: ServiceDetail[] = [
   {
     slug: "hernias",
     title: "Hernias",
-    heroImage: "https://scot-cranston2.360max.io/wp-content/uploads/2021/08/hiatal-hernias.png",
-    imageAlt: "Illustration of hernia repair",
+    heroImage: "/images/hernia-repair.jpg",
+    imageAlt: "Hernia repair",
     summary:
       "Robotic and minimally invasive hernia repair tailored to groin, ventral, incisional, and complex hiatal hernias.",
     conditions: [
@@ -45,8 +45,8 @@ export const serviceDetails: ServiceDetail[] = [
   {
     slug: "colonoscopy-endoscopy",
     title: "Colonoscopy/Endoscopy",
-    heroImage: "https://scot-cranston2.360max.io/wp-content/uploads/2021/08/Colon.png",
-    imageAlt: "Illustration of endoscopic evaluation of the colon",
+    heroImage: "/images/colonoscopy.png",
+    imageAlt: "Colonoscopy and endoscopy illustration",
     summary:
       "Diagnostic and therapeutic upper and lower endoscopy to investigate bleeding, reflux, dysphagia, weight loss, and screening needs.",
     conditions: [
@@ -73,11 +73,12 @@ export const serviceDetails: ServiceDetail[] = [
   {
     slug: "gastrointestinal-disorders",
     title: "Gastrointestinal Disorders",
-    heroImage: "https://scot-cranston2.360max.io/wp-content/uploads/2021/08/gerd.png",
-    imageAlt: "Illustration of esophageal reflux",
+    heroImage: "/images/GERD.webp",
+    imageAlt: "Illustration of gastroesophageal reflux disease (GERD)",
     summary:
       "Medical and surgical care for inflammatory bowel disease, motility issues, reflux, and complex fistulas with enhanced recovery pathways.",
     conditions: [
+      "Gastroesophageal Reflux Disease (GERD)",
       "Chronic Constipation",
       "Diarrhea",
       "Diverticulitis",
@@ -94,14 +95,13 @@ export const serviceDetails: ServiceDetail[] = [
       "Colovaginal and Rectovaginal Fistula",
       "Colovesical Fistula",
       "Enterocutaneous Fistula",
-      "Gastroesophageal Reflux Disease (GERD)",
     ],
   },
   {
     slug: "hemorrhoids-anorectal-conditions",
     title: "Hemorrhoids & Anorectal Conditions",
-    heroImage: "https://scot-cranston2.360max.io/wp-content/uploads/2021/08/Colon.png",
-    imageAlt: "Illustration of the rectum and anal canal",
+    heroImage: "/images/anorectal.png",
+    imageAlt: "Illustration of anorectal anatomy",
     summary:
       "Office and operative management of hemorrhoids, fissures, fistulas, and anorectal pain with a focus on fast relief.",
     conditions: [
@@ -126,8 +126,8 @@ export const serviceDetails: ServiceDetail[] = [
   {
     slug: "skin-soft-tissue",
     title: "Skin & Soft Tissue",
-    heroImage: "https://scot-cranston2.360max.io/wp-content/uploads/2021/08/breast-bisease.png",
-    imageAlt: "Illustration of skin and soft tissue anatomy",
+    heroImage: "/images/skin-soft-tissue.jpeg",
+    imageAlt: "Skin and soft tissue anatomy",
     summary:
       "Excision of skin cancers, cysts, and soft-tissue masses with attention to clear margins and cosmetic closure.",
     conditions: [
@@ -144,8 +144,8 @@ export const serviceDetails: ServiceDetail[] = [
   {
     slug: "colon-rectal-cancer",
     title: "Colon & Rectal Cancer",
-    heroImage: "https://scot-cranston2.360max.io/wp-content/uploads/2021/08/Colon.png",
-    imageAlt: "Diagram of the colon and rectum",
+    heroImage: "/images/colon-rectum.jpeg",
+    imageAlt: "Colon and rectum anatomy",
     summary:
       "Minimally invasive staging, resection, and surveillance plans for cancers of the colon, rectum, and anus.",
     conditions: ["Colon Cancer", "Rectal Cancer", "Anal Cancer"],
@@ -153,8 +153,8 @@ export const serviceDetails: ServiceDetail[] = [
   {
     slug: "breast-disease",
     title: "Breast Disease",
-    heroImage: "https://scot-cranston2.360max.io/wp-content/uploads/2021/08/breast-bisease.png",
-    imageAlt: "Clinical illustration of breast care",
+    heroImage: "/images/breast-care.jpeg",
+    imageAlt: "Breast care",
     summary:
       "Oncoplastic approaches, biopsies, and coordination with oncology partners for benign and malignant breast conditions.",
     conditions: ["Fibroadenoma", "Breast Cancer", "Ductal Hyperplasia", "Breast Abscess", "Breast Cyst"],

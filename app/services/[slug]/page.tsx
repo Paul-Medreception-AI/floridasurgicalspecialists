@@ -45,21 +45,21 @@ export default async function ServiceDetailPage({
     <main className="bg-white text-slate-900">
       <section className="hero-gradient">
         <div className="section-shell grid gap-10 py-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="space-y-5 text-white">
-            <p className="eyebrow text-teal-200">Surgical Expertise</p>
-            <h1 className="text-4xl font-semibold leading-tight lg:text-5xl">{service.title}</h1>
-            <p className="max-w-2xl text-lg text-slate-100">{service.summary}</p>
-            <div className="grid gap-3 text-sm text-slate-100">
+          <div className="space-y-5">
+            <p className="eyebrow text-teal-600">Surgical Expertise</p>
+            <h1 className="text-4xl font-semibold leading-tight text-slate-900 lg:text-5xl">{service.title}</h1>
+            <p className="max-w-2xl text-lg text-slate-700">{service.summary}</p>
+            <div className="grid gap-3 text-sm text-slate-700">
               <div className="flex items-start gap-2">
-                <span className="mt-1 text-teal-200">✓</span>
+                <span className="mt-1 text-teal-600">✓</span>
                 <p>Robotic and minimally invasive options prioritized whenever safe.</p>
               </div>
               <div className="flex items-start gap-2">
-                <span className="mt-1 text-teal-200">✓</span>
+                <span className="mt-1 text-teal-600">✓</span>
                 <p>Care team scheduling with pre-op education and next-day call-backs.</p>
               </div>
               <div className="flex items-start gap-2">
-                <span className="mt-1 text-teal-200">✓</span>
+                <span className="mt-1 text-teal-600">✓</span>
                 <p>Close follow-up with referring providers and rapid imaging coordination.</p>
               </div>
             </div>
@@ -67,13 +67,13 @@ export default async function ServiceDetailPage({
               <Link className="btn btn-primary" href="/request-appointment">
                 Request appointment
               </Link>
-              <Link className="btn btn-outline border-white text-white hover:bg-white/10" href="/contact">
+              <Link className="btn btn-outline" href="/contact">
                 Talk with our team
               </Link>
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-3xl border border-white/20 bg-white/5 shadow-2xl backdrop-blur">
+          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-lg">
             <Image
               src={service.slug === "hernias" ? "/images/Paul2SRC.png" : service.heroImage}
               alt={service.imageAlt}

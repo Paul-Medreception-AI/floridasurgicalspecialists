@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { serviceDetails } from "./service-data";
 
@@ -31,6 +32,15 @@ export default function ServicesPage() {
               className="flex h-full flex-col justify-between rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
             >
               <div className="space-y-3">
+                <div className="relative h-44 w-full overflow-hidden rounded-2xl border border-slate-100 bg-slate-50">
+                  <Image
+                    src={service.heroImage}
+                    alt={service.imageAlt}
+                    fill
+                    sizes="(min-width: 768px) 520px, 100vw"
+                    className="object-cover"
+                  />
+                </div>
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-500">
                   Surgical Excellence
                 </p>
