@@ -2,25 +2,71 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
+  --surface: #f8fafc;
+  --foreground: #1f2933;
+  --brand-primary: #18b6a3;
+  --brand-secondary: #1f2933;
+  --brand-accent: #52aaaf;
+  --brand-muted: #9bc3c9;
+  --brand-contrast: #ffffff;
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-muted: var(--brand-muted);
+  --color-brand-contrast: var(--brand-contrast);
+  --font-sans: var(--font-inter), "Inter", "SF Pro Display", -apple-system,
+    "Segoe UI", sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-inter), "Inter", "SF Pro Display", -apple-system,
+    "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #eef9fa 0%, #f2fbfc 55%, #fdfefe 100%);
+}
+
+.section-shell {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 0.85rem 1.75rem;
+  font-weight: 600;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.btn-primary {
+  background: var(--color-brand-primary);
+  color: var(--color-brand-contrast);
+}
+
+.btn-outline {
+  border: 1px solid var(--color-brand-primary);
+  color: var(--color-brand-primary);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(3, 172, 176, 0.25);
 }
