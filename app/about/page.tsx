@@ -96,7 +96,7 @@ export default function AboutPage() {
             />
           </div>
           <div className="grid gap-3 rounded-3xl border border-slate-200 bg-white p-4 shadow-sm lg:grid-cols-[0.6fr_1.4fr] lg:items-center">
-            <div className="relative h-44 w-full overflow-hidden rounded-2xl border border-slate-100">
+            <div className="relative h-[300px] w-full overflow-hidden rounded-2xl border border-slate-100 lg:h-44">
               <Image
                 src="/images/paul-whitecoat.jpg"
                 alt="Dr. Paul Toomey in white coat"
