@@ -6,7 +6,7 @@ const heroContent = {
   title: "The Very Best Robotic Surgery Solutions!",
   subtitle: "Less pain. Faster recovery.",
   paragraph:
-    "The future of medicine has become today's reality. Together with his staff, Dr. Paul Toomey delivers advanced robotic and minimally invasive surgical care for Bradenton, Sarasota, and the surrounding Gulf Coast.",
+    "The future of medicine has become today's reality. Together with his staff, Dr. Paul Toomey delivers advanced robotic and minimally invasive surgical care across the Gulf Coast, centered in Bradenton.",
   primaryCta: { label: "Contact Us", href: "/contact" },
   secondaryCta: {
     label: "Request Appointment",
@@ -18,7 +18,7 @@ const heroContent = {
 const locationContent = {
   heading: "Our Location",
   description:
-    "With multiple office locations in Sarasota and Bradenton, patients no longer need to travel far from home to obtain the best surgical care. Dr. Paul Toomey is a staff surgeon at Manatee Memorial Hospital and Lakewood Ranch Medical Center. Outpatient procedures are performed at Manatee Surgical Center.",
+    "Based in Bradenton, patients no longer need to travel far from home to obtain the best surgical care. Dr. Paul Toomey is a staff surgeon at Manatee Memorial Hospital and Lakewood Ranch Medical Center. Outpatient procedures are performed at Manatee Surgical Center.",
   addressLines: [
     "607 Manatee Ave. E. Suite 102",
     "Bradenton, FL 34208",
