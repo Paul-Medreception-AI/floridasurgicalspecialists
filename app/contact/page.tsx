@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import AppointmentForm from "@/app/request-appointment/AppointmentForm";
+
 const contactInfo = {
   addressHref: "https://goo.gl/maps/5HUFPYt9tK9cfchi7",
   phoneDisplay: "941-216-3602",
@@ -43,7 +45,7 @@ const contactBlocks = [
 export default function ContactPage() {
   return (
     <main className="bg-white text-slate-900">
-      <section className="section-shell grid gap-10 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+      <section className="section-shell grid gap-8 py-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
         <div className="space-y-7">
           <div className="space-y-3">
             <p className="eyebrow text-teal-500">Contact</p>
@@ -56,32 +58,39 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {contactBlocks.map((block) => (
-              <div
-                key={block.label}
-                className="flex h-full flex-col rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4 shadow-sm"
-              >
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-500">
-                  {block.label}
-                </p>
-                <a
-                  className={`block max-w-full font-semibold leading-snug text-slate-900 hover:text-teal-600 ${
-                    block.label === "Email"
-                      ? "break-all text-sm sm:text-base"
-                      : block.label === "Visit"
+          <div className="grid gap-4 sm:grid-cols-2">
+            {contactBlocks
+              .filter((block) => block.label !== "Email")
+              .map((block) => (
+                <div
+                  key={block.label}
+                  className="flex h-full flex-col rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4 shadow-sm"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-500">
+                    {block.label}
+                  </p>
+                  <a
+                    className={`block max-w-full font-semibold leading-snug text-slate-900 hover:text-teal-600 ${
+                      block.label === "Visit"
                         ? "break-words text-sm sm:text-base"
                         : "text-base sm:text-lg"
-                  }`}
-                  href={block.href}
-                  target={block.label === "Visit" ? "_blank" : undefined}
-                  rel={block.label === "Visit" ? "noreferrer" : undefined}
-                >
-                  {block.value}
-                </a>
-                <p className="text-sm text-slate-600">{block.description}</p>
-              </div>
-            ))}
+                    }`}
+                    href={block.href}
+                    target={block.label === "Visit" ? "_blank" : undefined}
+                    rel={block.label === "Visit" ? "noreferrer" : undefined}
+                  >
+                    {block.value}
+                  </a>
+                  <p className="text-sm text-slate-600">{block.description}</p>
+                </div>
+              ))}
+          </div>
+          <div className="mt-3 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4 shadow-sm sm:col-span-2">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-500">Email</p>
+            <p className="block text-[0.9rem] font-semibold leading-snug text-slate-900 whitespace-nowrap">
+              {officeDetails.email}
+            </p>
+            <p className="text-sm text-slate-600">{contactBlocks.find((block) => block.label === "Email")?.description}</p>
           </div>
 
           <div className="rounded-2xl border border-dashed border-[#18b6a3] bg-[#f0fbf7] px-5 py-4">
@@ -106,9 +115,16 @@ export default function ContactPage() {
             <Link className="btn btn-primary" href="/request-appointment">
               Request appointment
             </Link>
-            <a className="btn btn-outline" href={`mailto:${officeDetails.email}`}>
-              Email floridasurgicalspecialists@gmail.com
-            </a>
+          </div>
+
+          <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-lg">
+            <p className="text-sm font-semibold text-teal-600">Contact us</p>
+            <p className="text-base text-slate-700">Share your question or request and we’ll reply as soon as possible.</p>
+            <AppointmentForm
+              title="Contact us"
+              description="Share your question or request and we’ll reply as soon as possible."
+              buttonLabel="Send message"
+            />
           </div>
         </div>
 
@@ -120,22 +136,6 @@ export default function ContactPage() {
               width={1200}
               height={800}
               className="h-full w-full object-cover"
-            />
-          </div>
-          <div className="rounded-2xl bg-slate-50 p-5">
-            <p className="text-sm font-semibold text-slate-700">Office location</p>
-            <div className="mt-2 space-y-1 text-sm text-slate-600">
-              {officeDetails.addressLines.map((line) => (
-                <p key={line}>{line}</p>
-              ))}
-            </div>
-          </div>
-          <div className="overflow-hidden rounded-2xl border border-slate-100 shadow-inner">
-            <iframe
-              src={officeDetails.mapSrc}
-              title="Florida Surgical Specialists Bradenton office"
-              className="h-[380px] w-full"
-              loading="lazy"
             />
           </div>
         </div>

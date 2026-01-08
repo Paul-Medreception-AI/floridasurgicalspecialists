@@ -42,7 +42,11 @@ export default function AboutPage() {
               surgical care focused on clarity, comfort, and minimally invasive outcomes.
             </p>
             <p>
-              Florida Surgical Specialists pairs advanced robotics with a personal, high-touch experience. Our team
+              Florida Surgical Specialists began in 2015 when Dr. Toomey turned his vision for a robot-assisted practice into
+              reality, creating a team committed to delivering efficient, modern care in Bradenton.
+            </p>
+            <p>
+              Florida Surgical Specialists pairs advanced robotics with a personal, patient-first experience. Our team
               delivers complex abdominal, colorectal, breast, and hernia care with meticulous planning and rapid
               recovery pathways.
             </p>
@@ -60,7 +64,7 @@ export default function AboutPage() {
               >
                 MedReception.ai
               </a>{" "}
-              to keep patients and providers connected.
+              — a company Dr. Toomey co-founded to streamline medical workplace operations for patients and providers.
             </p>
           </div>
           <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
@@ -68,6 +72,7 @@ export default function AboutPage() {
             <div className="mt-3 grid gap-2 text-sm text-slate-700">
               <p>Established Florida Surgical Specialists in 2015. Originally from Hagerstown, Maryland.</p>
               <p>Completed training at the University of South Florida and Florida Hospital Tampa.</p>
+              <p>Bachelor of Science in Biomedical Engineering from Duke University.</p>
               <p>
                 Active in academic research with 26 publications (including a book chapter) and 63 presentations
                 spanning cancer immunology, melanoma, robotic surgery, and pancreatic cancer.

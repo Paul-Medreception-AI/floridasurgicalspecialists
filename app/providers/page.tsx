@@ -85,6 +85,11 @@ export default function ProvidersPage() {
               You&apos;ll work directly with Dr. Paul Toomey—from your first consult through recovery—receiving
               personalized surgical care focused on clarity, comfort, and minimally invasive outcomes.
             </p>
+            <p className="max-w-3xl text-lg text-slate-600">
+              His training includes a Bachelor of Science in Biomedical Engineering from Duke University, followed by
+              medical school and surgical residency in Florida, giving you a provider who blends rigorous engineering
+              thinking with hands-on surgical excellence.
+            </p>
           </div>
 
           <div className="grid gap-5 lg:grid-cols-2">
