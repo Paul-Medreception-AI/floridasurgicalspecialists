@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import { SiteFooter } from "./_components/site-footer";
 import { SiteHeader } from "./_components/site-header";
 import "./globals.css";
 
@@ -38,6 +39,7 @@ gtag('config', 'G-953PG65914');`}
       >
         <SiteHeader />
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
